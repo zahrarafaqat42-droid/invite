@@ -1,0 +1,99 @@
+<!-- invite.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Computer Coding Week - Pakistan International School Riyadh</title>
+  <style>
+    :root{
+      --accent1:#ff8a65; --accent2:#ffccbc; --accent3:#9fa8da;
+      --text:#222; --card-bg:#fff;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    body{
+      margin:0;
+      background: linear-gradient(180deg, #fff 0%, #fff0 35%), #fafafa;
+      display:flex; align-items:center; justify-content:center;
+      min-height:100vh; color:var(--text);
+      padding:20px;
+    }
+    .card{
+      width:100%; max-width:900px;
+      background:var(--card-bg);
+      border-radius:16px;
+      box-shadow:0 8px 30px rgba(0,0,0,0.08);
+      padding:28px 32px;
+      display:flex;
+      gap:20px;
+      align-items:flex-start;
+    }
+    .left{
+      flex:1; min-width:260px;
+    }
+    .right{
+      width:260px; display:flex; flex-direction:column; gap:12px; align-items:flex-end;
+    }
+
+    h1{ margin:0 0 8px 0; font-size:20px; letter-spacing:0.4px;}
+    p{ margin:6px 0; line-height:1.4; }
+    .small{ font-size:13px; color:#555; }
+    .outline-logo{
+      width:82px; height:82px; border-radius:12px;
+      background:linear-gradient(135deg,var(--accent3),#fff); display:flex;
+      align-items:center; justify-content:center; font-weight:700; color:#fff;
+    }
+
+    .section{
+      margin-top:10px; padding:12px; border-radius:10px;
+      background:linear-gradient(90deg,var(--accent2), #fff);
+    }
+    .label{ font-weight:700; font-size:14px; margin-bottom:6px; }
+    .footer{ margin-top:18px; font-size:13px; color:#333; }
+
+    /* responsive */
+    @media (max-width:700px){
+      .card{ flex-direction:column; padding:20px; }
+      .right{ width:100%; align-items:flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="document" aria-label="Invitation">
+    <div class="left">
+      <h1>Pakistan International School, Riyadh</h1>
+      <p class="small">We warmly invite you to join us for</p>
+      <div class="section" aria-hidden="false">
+        <div style="font-size:18px;font-weight:800;">COMPUTER CODING WEEK</div>
+        <p class="small">Middle School Girls Section (MGS)</p>
+      </div>
+
+      <div style="margin-top:12px;">
+        <p>(Your presence would mean a lot to us and will surely encourage our students as they showcase their coding projects and creativity.)</p>
+        <p class="label">Date</p>
+        <p>Wednesday, 18th September 2025</p>
+
+        <p class="label">Venue</p>
+        <p>Middle School Girls Section</p>
+      </div>
+
+      <div class="footer">
+        <p>Sincerely,</p>
+        <p>Mrs. Hira Junaid — Middle School Girls Section (MGS)</p>
+      </div>
+    </div>
+
+    <div class="right" aria-hidden="true">
+      <div class="outline-logo">PISR</div>
+      <div style="text-align:right;">
+        <div class="small">Organized by</div>
+        <strong>Mrs. Hira Junaid</strong>
+      </div>
+
+      <div style="margin-top:16px; text-align:right;">
+        <div class="small">Scan the QR on the printed invite to open this page on your phone.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
